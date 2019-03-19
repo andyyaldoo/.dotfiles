@@ -10,10 +10,7 @@ fi
 
 
 if test $(which brew); then
-    echo "\nYou have brew installed. Moving on...\n"
-
-    # tap caskroom/cask
-    # brew tap caskroom/cask
+    echo "\nYou have brew installed. Moving on..."
 fi
 
 #exit 0
