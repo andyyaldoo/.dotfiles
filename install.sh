@@ -1,3 +1,3 @@
 #!/bin/sh
 
-source homebrew.sh
+sh brew/install.sh
