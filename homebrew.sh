@@ -12,6 +12,3 @@ fi
 if test $(which brew); then
     echo "\nYou have brew installed. Moving on..."
 fi
-
-#exit 0
-return
