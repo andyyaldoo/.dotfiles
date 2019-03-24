@@ -8,7 +8,7 @@ else
         echo "\n/usr/local/bin/zsh is added to /etc/shells. Moving on...\n"
     else
         # add /usr/local/bin/zsh to /etc/shells
-        sudo -s 'echo /usr/local/bin/zsh >> /etc/shells'
+        sudo -s 'echo' /usr/local/bin/zsh >> /etc/shells
         if [ ! $? -eq 0]; then
             echo "Failed. trying other method..."
             sudo bash -c "echo /usr/local/bin/zsh >> /etc/shells"
