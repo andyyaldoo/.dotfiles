@@ -1,0 +1,5 @@
+alias k="kubectl"
+alias kg="k get"
+alias kgdep="k get deployments"
+alias ksys="k--namespace=kube-system"
+alias kd="kubectl describe"
