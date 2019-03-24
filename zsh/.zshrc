@@ -31,6 +31,8 @@ setopt auto_cd
 # ---------------------------- tmux --------------------------------
 . ~/.zsh_plugins/tmux.zsh
 
+. ~/.zsh_plugins/k8s.sh
+
 # ---------------------------- aliases ----------------------------------
 for alias in ~/.zsh_aliases/*.sh; do
   source $alias
