@@ -9,10 +9,10 @@ else
     else
         # add /usr/local/bin/zsh to /etc/shells
         sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells' 
-        if [ ! $? -eq 0]; then
+        if [ ! $? -eq 0 ]; then
             echo "Failed. trying other method..."
             sudo bash -c "echo /usr/local/bin/zsh >> /etc/shells"
-            if [ !$? -eq 0]; then
+            if [ !$? -eq 0 ]; then
                 echo "Failed. Aborting..."
                 exit 1
             fi
