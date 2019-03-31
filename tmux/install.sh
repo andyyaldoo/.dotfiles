@@ -1,3 +1,3 @@
 # Install tmux
 
-ln -s ./.tmux.conf ~/.tmux.conf
+ln -s $HOME/.dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
