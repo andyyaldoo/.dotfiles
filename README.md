@@ -4,6 +4,6 @@
 
 ### TODOS
 - [x] Add .zshrc
-- [ ] Add all wanted software in a Brewfile
-- [ ] Add .vimrc
+- [x] Add all wanted software in a Brewfile
+- [x] Add .vimrc
 - [ ] Add .tmux.conf
