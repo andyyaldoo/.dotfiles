@@ -6,4 +6,4 @@
 - [x] Add .zshrc
 - [x] Add all wanted software in a Brewfile
 - [x] Add .vimrc
-- [ ] Add .tmux.conf
+- [x] Add .tmux.conf
