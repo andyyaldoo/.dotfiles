@@ -12,3 +12,5 @@ fi
 if test $(which brew); then
     echo "\nYou have brew installed. Moving on..."
 fi
+
+brew bundle --file=$PWD/brew/Brewfile
