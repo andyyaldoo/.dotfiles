@@ -42,3 +42,4 @@ done
 # Why? Go here -> https://github.com/zsh-users/zsh-syntax-highlighting for answers
 # ---------------------------- syntax hightlighting ---------------------------------
 . ~/.zsh_plugins/syntax-highlighting.zsh
+
