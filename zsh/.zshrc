@@ -10,6 +10,8 @@ bindkey -e
 # Makes it easier to cd into directories because you don't have to type the word cd ever again
 setopt auto_cd
 
+# autoload -U promptinit; promptinit
+
 # ---------------------------- direnv ----------------------------------
 . ~/.zsh_plugins/direnv.zsh
 
@@ -23,7 +25,7 @@ setopt auto_cd
 . ~/.zsh_plugins/nvm.zsh
 
 # ---------------------------- Purity --------------------------------
-. ~/.zsh_plugins/purity.zsh
+# . ~/.zsh_plugins/purity.zsh
 
 # ---------------------------- Homebrew --------------------------------
 . ~/.zsh_plugins/homebrew.zsh
@@ -43,3 +45,11 @@ done
 # ---------------------------- syntax hightlighting ---------------------------------
 . ~/.zsh_plugins/syntax-highlighting.zsh
 
+
+eval "$(jenv init -)"
+
+export LC_ALL=en_US.UTF-8
+
+source <(antibody init)
+
+antibody bundle BrandonRoehl/zsh-clean

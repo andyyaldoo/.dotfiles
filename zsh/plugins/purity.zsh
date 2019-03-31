@@ -7,5 +7,4 @@ PURITY_GIT_PULL=0
 source ~/.zsh_plugins/purity.git.zsh # needed to prevent error after every prompt for purity, comment it if you don't believe me
 
 
-autoload -U promptinit; promptinit
 prompt purity
