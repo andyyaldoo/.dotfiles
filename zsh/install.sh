@@ -28,10 +28,12 @@ else
 fi
 
 # Symlink ./.zshrc to ~/.zshrc
-ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 
 # Symlink aliases
-ln -s ~/.dotfiles/zsh/.aliases ~/.zsh_aliases
+mkdir -p $HOME/.zsh_aliases
+ln -s $HOME/.dotfiles/zsh/aliases/* $HOME/.zsh_aliases
 
 # Symlink .plugins
-ln -s ~/.dotfiles/zsh/plugins ~/.zsh_plugins
+mkdir -p $HOME/.zsh_plugins
+ln -s $HOME/.dotfiles/zsh/plugins/* $HOME/.zsh_plugins
