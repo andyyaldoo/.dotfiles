@@ -24,9 +24,6 @@ setopt auto_cd
 # ---------------------------- Node Version Manager ---------------------------------
 . ~/.zsh_plugins/nvm.zsh
 
-# ---------------------------- Purity --------------------------------
-# . ~/.zsh_plugins/purity.zsh
-
 # ---------------------------- Homebrew --------------------------------
 . ~/.zsh_plugins/homebrew.zsh
 
