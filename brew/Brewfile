@@ -38,7 +38,7 @@ brew "nginx"
 brew "nvm"
 brew "openssh"
 brew "postgresql"
-brew "protobuf", link: false
+brew "protobuf"
 brew "redis"
 brew "ruby"
 brew "telnet"
