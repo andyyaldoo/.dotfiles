@@ -56,7 +56,7 @@ Plug 'editorconfig/editorconfig-vim'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'prettier/vim-prettier'
 " Plug 'tpope/vim-fugitive'
-" Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 
