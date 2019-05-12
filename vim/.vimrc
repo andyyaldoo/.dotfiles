@@ -151,7 +151,18 @@ augroup end
 "   To toggle
 "   :se boolopt!
 "
+" <nummber> G moves to that line number
 "
+" Ctrl+O go back to previous cursor
+"
+" Copying from one file to another in vim
+  " Can't simply use y on first file and then p on the other file
+  " Other way is to do :w FILENAMME on first file and then :r FILENAME on the
+  " other file
+"
+" :r can also be used to pipe output of command
+" e.g. :r !ls
+"      :r !pwd
 "
 "   To check the current value
 "   :se boolopt?
