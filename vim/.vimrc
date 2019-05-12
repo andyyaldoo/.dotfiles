@@ -118,9 +118,6 @@ augroup autosourcing
 augroup end
 
 " Notes and tips 
-" - Press 'zz' to instantly center the line where the cursor is located.
-" - Press 'di)' to delete everything inside a '()'
-" - Press 'va(' to select everything inside a '()' including the '()'
 
 "/
 "/ vim-surround
@@ -130,7 +127,6 @@ augroup end
 "
 "
 " NOTES
-" - ZZ is same as :x
 " - :g/pattern/command/g(lobal)c(onfirmation)
 " - U will undo the whole line
 " - Use 'operator [number] motion' technique more often`
@@ -163,9 +159,6 @@ augroup end
 "
 "   To set to default value
 "   :se boolopt&
-"
-"
-"   cancel ctrlp using Ctrl+C
 "
 "   vim -u NONE -U NONE -N ~/.vimrc -- useful for debuggin
 "
