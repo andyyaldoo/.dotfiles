@@ -1,5 +1,5 @@
 " -------------------General Settings------------------ "
-" set nocp
+set nocp
 " syntax enable
 
 " Make backspace behave like every other editor.
