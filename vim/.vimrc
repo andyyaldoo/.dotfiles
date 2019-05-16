@@ -1,5 +1,5 @@
 " -------------------General Settings------------------ "
-" set nocp
+set nocp
 " syntax enable
 
 " Make backspace behave like every other editor.
@@ -56,8 +56,9 @@ Plug 'editorconfig/editorconfig-vim'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'prettier/vim-prettier'
 " Plug 'tpope/vim-fugitive'
-" Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme'
 Plug 'airblade/vim-gitgutter'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -117,9 +118,6 @@ augroup autosourcing
 augroup end
 
 " Notes and tips 
-" - Press 'zz' to instantly center the line where the cursor is located.
-" - Press 'di)' to delete everything inside a '()'
-" - Press 'va(' to select everything inside a '()' including the '()'
 
 "/
 "/ vim-surround
@@ -129,7 +127,6 @@ augroup end
 "
 "
 " NOTES
-" - ZZ is same as :x
 " - :g/pattern/command/g(lobal)c(onfirmation)
 " - U will undo the whole line
 " - Use 'operator [number] motion' technique more often`
@@ -154,7 +151,18 @@ augroup end
 "   To toggle
 "   :se boolopt!
 "
+" <nummber> G moves to that line number
 "
+" Ctrl+O go back to previous cursor
+"
+" Copying from one file to another in vim
+  " Can't simply use y on first file and then p on the other file
+  " Other way is to do :w FILENAMME on first file and then :r FILENAME on the
+  " other file
+"
+" :r can also be used to pipe output of command
+" e.g. :r !ls
+"      :r !pwd
 "
 "   To check the current value
 "   :se boolopt?
@@ -162,9 +170,6 @@ augroup end
 "
 "   To set to default value
 "   :se boolopt&
-"
-"
-"   cancel ctrlp using Ctrl+C
 "
 "   vim -u NONE -U NONE -N ~/.vimrc -- useful for debuggin
 "

@@ -53,3 +53,7 @@ antibody bundle BrandonRoehl/zsh-clean
 
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 PS1='$(kube_ps1)'$PS1
+
+
+# To make `z` work
+. `brew --prefix`/etc/profile.d/z.sh
