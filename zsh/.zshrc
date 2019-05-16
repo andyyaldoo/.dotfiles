@@ -12,9 +12,25 @@ setopt auto_cd
 
 # autoload -U promptinit; promptinit
 
-for plugin in ~/.zsh_plugins/*.zsh; do
-  source $plugin
-done
+# ---------------------------- direnv ----------------------------------
+. ~/.zsh_plugins/direnv.zsh
+
+# ---------------------------- golang -----------------------------------
+. ~/.zsh_plugins/go.zsh
+
+# ---------------------------- autocomplete---------------------------------
+. ~/.zsh_plugins/autocomplete.zsh
+
+# ---------------------------- Node Version Manager ---------------------------------
+. ~/.zsh_plugins/nvm.zsh
+
+# ---------------------------- Homebrew --------------------------------
+. ~/.zsh_plugins/homebrew.zsh
+
+# ---------------------------- tmux --------------------------------
+. ~/.zsh_plugins/tmux.zsh
+
+. ~/.zsh_plugins/k8s.sh
 
 # ---------------------------- aliases ----------------------------------
 for alias in ~/.zsh_aliases/*.sh; do
