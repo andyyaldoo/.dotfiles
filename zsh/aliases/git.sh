@@ -78,4 +78,3 @@ alias gbl="git blame -b -w"
 alias gcl="git clone --recursive"
 
 alias gcf="git config --list"
-

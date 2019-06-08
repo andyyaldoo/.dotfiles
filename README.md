@@ -3,6 +3,7 @@
 * Idempotency: No matter how many times the script is run, the script should not do unecessary re-installing of packages
 
 ### TODOS
+
 - [x] Add .zshrc
 - [x] Add all wanted software in a Brewfile
 - [x] Add .vimrc
