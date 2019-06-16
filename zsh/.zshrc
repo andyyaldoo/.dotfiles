@@ -2,13 +2,12 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+
 # standard editor
 export EDITOR="vim"
+
 # Use emacs keybindings even if EDITOR is set to vim
 bindkey -e
-
-# Makes it easier to cd into directories because you don't have to type the word cd ever again
-setopt auto_cd
 
 # autoload -U promptinit; promptinit
 
@@ -51,10 +50,6 @@ export LC_ALL=en_US.UTF-8
 source <(antibody init)
 
 antibody bundle BrandonRoehl/zsh-clean
-
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1)'$PS1
-
 
 # To make `z` work
 . `brew --prefix`/etc/profile.d/z.sh
