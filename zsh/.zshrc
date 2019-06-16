@@ -42,7 +42,6 @@ done
 # ---------------------------- syntax hightlighting ---------------------------------
 . ~/.zsh_plugins/syntax-highlighting.zsh
 
-
 eval "$(jenv init -)"
 
 export LC_ALL=en_US.UTF-8
