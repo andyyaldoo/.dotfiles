@@ -2,6 +2,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+# antibody
+source <(antibody init)
+antibody bundle BrandonRoehl/zsh-clean
 
 # standard editor
 export EDITOR="vim"
@@ -45,10 +48,6 @@ done
 eval "$(jenv init -)"
 
 export LC_ALL=en_US.UTF-8
-
-source <(antibody init)
-
-antibody bundle BrandonRoehl/zsh-clean
 
 # To make `z` work
 . `brew --prefix`/etc/profile.d/z.sh
