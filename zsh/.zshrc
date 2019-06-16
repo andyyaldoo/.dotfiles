@@ -47,7 +47,5 @@ done
 
 eval "$(jenv init -)"
 
-export LC_ALL=en_US.UTF-8
-
 # To make `z` work
 . `brew --prefix`/etc/profile.d/z.sh
