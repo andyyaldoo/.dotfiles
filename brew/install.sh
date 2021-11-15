@@ -5,7 +5,7 @@
 if test ! $(which brew); then
   echo "\nLooks like you don't have homebrew. Installing it for you...\n"
   echo ""
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 
