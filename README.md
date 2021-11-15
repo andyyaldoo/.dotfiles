@@ -2,7 +2,16 @@
 
 * Idempotency: No matter how many times the script is run, the script should not do unecessary re-installing of packages
 
-### TODOS
+## Install
+
+```
+cd $HOME
+git clone git@github.com:andyyaldoo/.dotfiles.git
+cd .dotfiles
+bash install.sh
+```
+
+## TODOS
 
 - [x] Add .zshrc
 - [x] Add all wanted software in a Brewfile
