@@ -5,3 +5,5 @@ Consider setting the PATH for example like so                                   
     echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc
 END
 export PATH="/usr/local/sbin:$PATH"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
