@@ -49,3 +49,11 @@ eval "$(jenv init -)"
 
 # To make `z` work
 . `brew --prefix`/etc/profile.d/z.sh
+
+# To make `fzf` work
+if [[ ! -f  /Users/adharmawan/.fzf.zsh ]];
+then
+  $(brew --prefix)/opt/fzf/install
+fi
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

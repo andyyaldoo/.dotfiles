@@ -59,6 +59,7 @@ Plug 'prettier/vim-prettier'
 Plug 'plasticboy/vim-markdown'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
@@ -103,6 +104,12 @@ let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_highlight_functions = 1
+
+"/
+"/ fzf
+"/
+noremap <silent> <leader>f :FZF<cr>
+noremap <silent> <leader>F :FZF ~<cr>
 
 "/
 "/ vim-gitgutter
