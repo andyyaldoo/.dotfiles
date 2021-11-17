@@ -2,10 +2,6 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
-# antibody
-source <(antibody init)
-antibody bundle BrandonRoehl/zsh-clean
-
 # standard editor
 export EDITOR="vim"
 
