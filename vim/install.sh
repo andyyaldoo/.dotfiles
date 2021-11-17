@@ -12,4 +12,6 @@ if [ ! -f $HOME/.vim/colors/brogrammer.vim ]; then
 else
  echo "brogrammer theme is already installed. Moving on..."
 fi
-ln -s $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
+ln -fs $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
+
+vim +'PlugInstall --sync' +qa
