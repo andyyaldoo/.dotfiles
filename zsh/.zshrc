@@ -39,6 +39,8 @@ for alias in ~/.zsh_aliases/*.sh; do
   source $alias
 done
 
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" backward-word
 # Must be at the last line
 # Why? Go here -> https://github.com/zsh-users/zsh-syntax-highlighting for answers
 # ---------------------------- syntax hightlighting ---------------------------------
