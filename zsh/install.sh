@@ -3,11 +3,11 @@
 if [ $SHELL == "/bin/zsh" ]; then
     echo "\nzsh is already the default shell. Moving on...\n"
 else
-    # check if /usr/local/bin/zsh is added to /etc/shells
+    # check if /bin/zsh is added to /etc/shells
     if [ ! -z $(cat /etc/shells | grep /bin/zsh) ]; then
         echo "\n/bin/zsh is added to /etc/shells. Moving on...\n"
     else
-        # add /usr/local/bin/zsh to /etc/shells
+        # add /bin/zsh to /etc/shells
         sudo sh -c 'echo /bin/zsh >> /etc/shells' 
         if [ ! $? -eq 0 ]; then
             echo "Failed. trying other method..."
@@ -28,12 +28,13 @@ else
 fi
 
 # Symlink ./.zshrc to ~/.zshrc
-ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
+cp $HOME/.zshrc $HOME/.zshrc.bak
+ln -fs $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 
 # Symlink aliases
 mkdir -p $HOME/.zsh_aliases
-ln -s $HOME/.dotfiles/zsh/aliases/* $HOME/.zsh_aliases
+ln -fs $HOME/.dotfiles/zsh/aliases/* $HOME/.zsh_aliases
 
 # Symlink .plugins
 mkdir -p $HOME/.zsh_plugins
-ln -s $HOME/.dotfiles/zsh/plugins/* $HOME/.zsh_plugins
+ln -fs $HOME/.dotfiles/zsh/plugins/* $HOME/.zsh_plugins

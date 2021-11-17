@@ -1,5 +1,5 @@
 source <(kubectl completion zsh)
 
 # kube-ps1
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+source `brew --prefix`/opt/kube-ps1/share/kube-ps1.sh
 PS1='$(kube_ps1)'$PS1
