@@ -25,12 +25,12 @@ bindkey -e
 # ---------------------------- tmux --------------------------------
 . ~/.zsh_plugins/tmux.zsh
 
-# ---------------------------- k8s --------------------------------
-. ~/.zsh_plugins/k8s.sh
-
 # ---------------------------- zsh-clean --------------------------------
 . ~/.zsh_plugins/zsh-clean.zsh
 
+# ---------------------------- k8s --------------------------------
+. ~/.zsh_plugins/k8s.zsh
+#
 # ---------------------------- direnv ----------------------------------
 . ~/.zsh_plugins/direnv.zsh
 
@@ -40,7 +40,7 @@ for alias in ~/.zsh_aliases/*.sh; do
 done
 
 bindkey "^[^[[D" backward-word
-bindkey "^[^[[C" backward-word
+bindkey "^[^[[C" forward-word
 # Must be at the last line
 # Why? Go here -> https://github.com/zsh-users/zsh-syntax-highlighting for answers
 # ---------------------------- syntax hightlighting ---------------------------------
