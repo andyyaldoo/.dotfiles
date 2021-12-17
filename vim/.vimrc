@@ -43,12 +43,13 @@ map <Leader>ev :tabedit ~/.vimrc<CR>
 
 " -------------------Plugins------------------ "
 call plug#begin('~/.vim/plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-surround'
 " Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
 " Plug 'bling/vim-airline'
 Plug 'takac/vim-hardtime'
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-vinegar'
 Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'rstacruz/sparkup'
@@ -56,7 +57,7 @@ Plug 'editorconfig/editorconfig-vim'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'prettier/vim-prettier'
 " Plug 'tpope/vim-fugitive'
-Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

@@ -18,6 +18,7 @@ alias .....="cd ../../../.."
 
 # zsh aliases
 alias zshconfig="vim ~/.zshrc"
+alias zshreload="source ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias aliasconfig="vim ~/.zsh_aliases"
 alias tmuxconfig="vim ~/.tmux.conf"
